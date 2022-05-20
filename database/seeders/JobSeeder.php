@@ -18,10 +18,6 @@ class JobSeeder extends Seeder
     public function run()
     {
             Job::factory(25)->create()->each(function (Job $job){
-            Image::factory(1)->create([
-                'imageable_id' => $job->id,
-                'imageable_type' => Job::class
-            ]);
 
             Requirement::factory(4)->create([
                 'job_id' => $job->id

@@ -53,9 +53,5 @@ class ServiceSeeder extends Seeder
 
 
         ];
-
-        foreach ($services as $service){
-            Service::factory(1)->create($service);
-        }
     }
 }

@@ -62,10 +62,5 @@ class PlaceSeeder extends Seeder
             ],
 
         ];
-
-        foreach ($places as $place)
-        {
-            Place::factory(1)->create($place);
-        }
     }
 }
