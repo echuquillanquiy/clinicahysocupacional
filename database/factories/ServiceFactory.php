@@ -15,7 +15,7 @@ class ServiceFactory extends Factory
     {
         return [
             'description' => $this->faker->paragraph(3),
-            'image' => $this->faker->image('public/storage/services', 1920, 1280, null, false),
+            'image' => 'https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         ];
     }
 }

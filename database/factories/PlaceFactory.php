@@ -14,7 +14,7 @@ class PlaceFactory extends Factory
     public function definition()
     {
         return [
-            'image' => 'places/' .$this->faker->image('public/storage/places', 800, 800, null, false),
+            'image' => 'https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         ];
     }
 }
