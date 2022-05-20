@@ -22,7 +22,7 @@ class CreatePlacesTable extends Migration
             $table->string('phone');
             $table->string('url')->nullable();
             $table->text('iframe')->nullable();
-            $table->string('image');
+            $table->string('image')->nullable();
 
             $table->timestamps();
         });
