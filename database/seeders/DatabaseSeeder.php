@@ -25,10 +25,10 @@ class DatabaseSeeder extends Seeder
         $this->call(PermissionSeeder::class);
         $this->call(RoleSeeder::class);
         $this->call(UserSeeder::class);
-        $this->call(PlaceSeeder::class);
-        $this->call(ServiceSeeder::class);
+        //$this->call(PlaceSeeder::class);
+        //$this->call(ServiceSeeder::class);
         $this->call(AreaSeeder::class);
         $this->call(ScheduleSeeder::class);
-        $this->call(JobSeeder::class);
+        //$this->call(JobSeeder::class);
     }
 }
