@@ -92,7 +92,6 @@ class Services extends Component
         $rules = [
             'name' => "required|min:3|unique:services,name,{$this->selected_id}",
             'description' => 'required|min:8',
-            'image' => 'required'
         ];
 
         $messages = [
@@ -101,7 +100,6 @@ class Services extends Component
             'name.mim' => 'El nombre debe tener mínimo 3 caracteres.',
             'description.required' => 'La descripción es requerida.',
             'description.mim' => 'La descripción debe tener mínimo 8 caracteres.',
-            'image.required' => 'La imagen es requerida.'
         ];
 
         $this->validate($rules, $messages);
