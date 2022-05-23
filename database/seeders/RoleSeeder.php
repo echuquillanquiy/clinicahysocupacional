@@ -19,5 +19,8 @@ class RoleSeeder extends Seeder
 
         $role = Role::create(['name' => 'Entrevistador']);
         $role->syncPermissions(['Crear trabajos', 'Ver trabajos', 'Actualizar trabajos', 'Eliminar trabajos']);
+
+        $role = Role::create(['name' => 'Postulante']);
+        $role->permissions()->attach([5]);
     }
 }

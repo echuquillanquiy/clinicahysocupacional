@@ -114,15 +114,17 @@
                                 {{ __('Perfil') }}
                             </x-jet-dropdown-link>
 
-                            @can('Ver dashboard')
+                            @can('Ver usuarios')
                                 <x-jet-dropdown-link href="{{ route('admin.user.index') }}">
                                     {{ __('Administrador') }}
                                 </x-jet-dropdown-link>
                             @endcan
 
-                            <x-jet-dropdown-link href="{{ route('reclutador.job-index') }}">
-                                {{ __('Reclutador') }}
-                            </x-jet-dropdown-link>
+                            @can('Crear trabajos')
+                                <x-jet-dropdown-link href="{{ route('reclutador.job-index') }}">
+                                    {{ __('Reclutador') }}
+                                </x-jet-dropdown-link>
+                            @endcan
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">

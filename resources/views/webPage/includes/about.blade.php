@@ -4,11 +4,11 @@
             <div class="about-items">
                 <div class="col-md-6 inc-video">
                     <div class="thumb">
-                        <img src="{{ asset('webPage/assets/img/nosotros/1jpg.jpg') }}" alt="Thumb">
+                        <img src="{{ asset('webPage/assets/img/nosotros/lab.jpg') }}" alt="Thumb">
                     </div>
                 </div>
                 <div class="col-md-6 info">
-                    <h4>CON MAS DE 10 AÑOS DE EXPERIENCIA</h4>
+                    <h4>CON MAS DE 15 AÑOS DE EXPERIENCIA</h4>
                     <h2>H&S OCCUPATIONAL</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur blanditiis cupiditate dolor,
