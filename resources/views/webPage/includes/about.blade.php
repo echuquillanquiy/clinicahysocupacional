@@ -8,11 +8,16 @@
                     </div>
                 </div>
                 <div class="col-md-6 info">
-                    <h4>CON MAS DE 15 AÑOS DE EXPERIENCIA</h4>
+                    <h4>CON MAS DE 10 AÑOS DE EXPERIENCIA</h4>
                     <h2>H&S OCCUPATIONAL</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur blanditiis cupiditate dolor,
-                        dolores earum eum explicabo illo ipsum, molestias nisi non quam quibusdam quisquam quod similique voluptatum? Inventore, maiores.
+                    <p style="text-align: justify;">
+                        Somos CLÍNICA H&amp;S OCCUPATIONAL acreditada desde 2009 constituida por
+                        especialistas por DIGESA-NACIONAL, creada para ofrecer y satisfacer las
+                        exigencias de su empresa que se alineen a las leyes laborales, teniendo como
+                        pilares nuestras políticas y valores empresariales, con el propósito de fortalecer
+                        los aspectos de gestión de salud e higiene ocupacional y lograr empresas
+                        saludables. En la actualidad contamos con 5 sedes a nivel nacional
+                        (HUANCAYO, LIMA, HUANCAVELICA, CERRO DE PASCO, SAN RAMÒN)
                     </p>
                     <div class="bottom">
                         <div class="video">
