@@ -42,6 +42,9 @@
                                     <li>
                                         <a href="https://www.facebook.com/hysoccupational" target="_blank">Facebook</a>
                                     </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/hys.clinicaocupacional/" target="_blank">Instagram</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
