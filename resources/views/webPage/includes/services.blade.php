@@ -88,7 +88,7 @@
                                 </div>
                                 <!-- End Department Info -->
                             </div>
-                    @endforeach
+                        @endforeach
                     <!-- End Single Item -->
 
                     </div>
