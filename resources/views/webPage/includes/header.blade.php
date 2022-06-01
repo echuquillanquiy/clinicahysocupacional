@@ -3,7 +3,7 @@
     <!-- Start Navigation -->
     <nav class="navbar navbar-default bootsnav navbar-sticky">
 
-        <div class="container">
+        <div class="container-fluid">
             <!-- Start Header Navigation -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
@@ -31,7 +31,11 @@
                         <a class="smooth-menu" href="#places">NUESTRAS SEDES</a>
                     </li>
                     <li>
-                        <a class="smooth-menu" href="#works">TRABAJA CON NOSOTROS</a>
+                        <a class="smooth-menu">TRABAJA CON NOSOTROS</a>
+                    </li>
+
+                    <li>
+                        <a class="smooth-menu" href="{{ route('cotizaciones') }}">COTIZACIONES</a>
                     </li>
 
                     @auth()

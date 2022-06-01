@@ -22,20 +22,6 @@
             @foreach($services as $service)
                 <div class="item">
                     <div class="slider-thumb bg-cover" style="background-image: url({{ asset('storage/services/'.$service->image) }});"></div>
-                    <div class="box-table">
-                        <div class="box-cell">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <div class="content">
-                                            <h1 data-animation="animated fadeInUp">{{ $service->name }}</h1>
-                                            <a data-animation="animated slideInUp" class="btn btn-danger btn-md" href="http://clientes.clinicahys.com:8021" target="_blank">Certificado de Aptidud</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             @endforeach
         </div>

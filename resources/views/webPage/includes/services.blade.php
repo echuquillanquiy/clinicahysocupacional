@@ -37,13 +37,8 @@
                                     <div class="thumb">
                                         <img src="{{ asset('webPage/assets/img/slider/home.jpg') }}" alt="Thumb">
                                     </div>
-                                    <h3>SERVICIOS H&S OCUPACIONAL</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Atque commodi culpa ducimus est labore molestiae, omnis unde. Accusantium ad deleniti in ipsam voluptatibus.
-                                        Adipisci aut deserunt facere quas, qui sed?
-                                    </p>
-
+                                    <h3 class="text-center">SERVICIOS RED DE
+                                        CLINICAS H&S OCUPACIONAL</h3>
                                 </div>
                             </div>
 

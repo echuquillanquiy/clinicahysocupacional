@@ -3,6 +3,7 @@
 use App\Http\Controllers\Web\HomeController;
 use App\Http\Controllers\Web\JobController;
 use App\Http\Controllers\Web\PlaceController;
+use App\Http\Controllers\Web\QoutationController;
 use App\Http\Controllers\Web\ServiceController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,3 +31,5 @@ Route::post('job/{job}/applied', [JobController::class, 'applied'])->middleware(
 Route::resource('sedes', PlaceController::class)->middleware('auth')->names('places');
 
 Route::get('servicios', [ServiceController::class, 'index'])->name('servicios.index')->middleware('auth');
+
+Route::get('cotizaciones', [QoutationController::class, 'index'])->name('cotizaciones');
