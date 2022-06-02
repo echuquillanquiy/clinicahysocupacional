@@ -5,6 +5,7 @@ use App\Http\Controllers\Web\JobController;
 use App\Http\Controllers\Web\PlaceController;
 use App\Http\Controllers\Web\QoutationController;
 use App\Http\Controllers\Web\ServiceController;
+use App\Http\Livewire\Quotation\QuotationRequests;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,3 +34,5 @@ Route::resource('sedes', PlaceController::class)->middleware('auth')->names('pla
 Route::get('servicios', [ServiceController::class, 'index'])->name('servicios.index')->middleware('auth');
 
 Route::get('cotizaciones', [QoutationController::class, 'index'])->name('cotizaciones');
+
+Route::get('cotizaciones/solicitudes', QuotationRequests::class)->name('solicitudes')->middleware('auth');

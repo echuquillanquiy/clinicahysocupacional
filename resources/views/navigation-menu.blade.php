@@ -120,6 +120,12 @@
                                 </x-jet-dropdown-link>
                             @endcan
 
+                            @can('Ver Solicitudes')
+                                <x-jet-dropdown-link href="{{ route('admin.user.index') }}">
+                                    {{ __('Cotizaciones') }}
+                                </x-jet-dropdown-link>
+                            @endcan
+
                             @can('Crear trabajos')
                                 <x-jet-dropdown-link href="{{ route('reclutador.job-index') }}">
                                     {{ __('Reclutador') }}
