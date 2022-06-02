@@ -23,6 +23,13 @@
                         </a>
                     @endcan
 
+                    @can('Ver Solicitudes')
+                        <a class="dropdown-item" href="{{ route('solicitudes') }}" target="_blank">
+                            <i class="mr-50" data-feather="unlock"></i>
+                            Cotizaciones
+                        </a>
+                    @endcan
+
                     <a class="dropdown-item" href="{{ route('reclutador.job-index') }}" target="_blank">
                         <i class="mr-50" data-feather="unlock"></i>
                         Reclutador

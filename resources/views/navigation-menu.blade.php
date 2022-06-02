@@ -121,7 +121,7 @@
                             @endcan
 
                             @can('Ver Solicitudes')
-                                <x-jet-dropdown-link href="{{ route('admin.user.index') }}">
+                                <x-jet-dropdown-link href="{{ route('solicitudes') }}">
                                     {{ __('Cotizaciones') }}
                                 </x-jet-dropdown-link>
                             @endcan
