@@ -32,7 +32,10 @@
                 </th>
 
                 <th scope="col" class="relative px-6 py-3">
-                    <span class="sr-only">Edit</span>
+                    <span class="sr-only">Cotizar</span>
+                </th>
+                <th scope="col" class="relative px-6 py-3">
+                    <span class="sr-only">Pdf</span>
                 </th>
             </tr>
             </thead>
@@ -93,21 +96,32 @@
                         @switch($quotation->status)
                             @case(1)
                             <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
-                                Borrador
+                                Recibido
                             </span>
                             @break
 
                             @case(2)
-                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
-                                Publicado
-                            </span>
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    Pendiente
+                                </span>
                             @break
+
+                            @case(3)
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                    Cotizado
+                                </span>
+                                @break
                         @endswitch
                     </td>
 
+                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                        <a href="{{ route('generar.Cotizacion', $quotation) }}" class="text-indigo-600 hover:text-white btn btn-danger">Cotizar</a>
+                    </td>
 
                     <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                        <a href="" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                        <a href="" class="text-indigo-600 hover:text-blue-500">
+                            Imprimir
+                        </a>
                     </td>
                 </tr>
             @endforeach

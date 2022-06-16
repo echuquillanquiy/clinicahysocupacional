@@ -36,3 +36,5 @@ Route::get('servicios', [ServiceController::class, 'index'])->name('servicios.in
 Route::get('cotizaciones', [QoutationController::class, 'index'])->name('cotizaciones');
 
 Route::get('cotizaciones/solicitudes', QuotationRequests::class)->middleware('auth')->name('solicitudes');
+
+Route::get('cotizaciones/{quotation}/generar', [QoutationController::class, 'create'])->name('generar.Cotizacion')->middleware('auth');

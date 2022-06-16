@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
 use App\Models\Job;
+use App\Models\Quotation;
 use App\Models\r;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -28,9 +29,10 @@ class QoutationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Quotation $quotation)
     {
-    }        //
+        return view('web.quotations.create', compact('quotation'));
+    }
 
 
     /**

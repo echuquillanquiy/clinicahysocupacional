@@ -6,8 +6,11 @@ use App\Models\Quotation;
 use Livewire\Component;
 use function view;
 
+use Livewire\WithFileUploads;
+
 class CotizacionIndex extends Component
 {
+    use WithFileUploads;
 
     public $ruc, $name, $email, $phone, $contact, $position, $workers, $positions;
 
