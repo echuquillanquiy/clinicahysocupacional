@@ -114,11 +114,11 @@
                                 {{ __('Perfil') }}
                             </x-jet-dropdown-link>
 
-{{--                            @can('Ver usuarios')--}}
+                            @can('Ver usuarios')
                                 <x-jet-dropdown-link href="{{ route('admin.user.index') }}">
                                     {{ __('Administrador') }}
                                 </x-jet-dropdown-link>
-{{--                            @endcan--}}
+                            @endcan
 
                             @can('Ver Solicitudes')
                                 <x-jet-dropdown-link href="{{ route('solicitudes') }}">
