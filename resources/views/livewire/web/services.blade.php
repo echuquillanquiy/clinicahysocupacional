@@ -33,7 +33,7 @@
 
                                 <td class="text-center">
                                     <span class="avatar">
-                                        <img class="round" src="{{ asset('storage/services/'. $service->image) }}" alt="avatar" height="40" width="40">
+                                        <img class="round" src="{{ Storage::url($service->image) }}" alt="avatar" height="40" width="40">
                                     </span>
                                 </td>
                                 <td>{{ $service->name }}</td>
