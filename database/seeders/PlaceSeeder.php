@@ -56,7 +56,7 @@ class PlaceSeeder extends Seeder
                 'name' => 'PASCO',
                 'address' => 'JR. JOSE CARLOS MARIÁTEGUI N° 105 - YANACANCHA - PASCO - PASCO',
                 'email' => 'pasco@hysoccupational.com',
-                'phone' => '946241510',
+                'phone' => '980025269',
                 'url' => 'https://goo.gl/maps/MPAA5VQaoexJqPyi6',
                 'iframe' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490.11534640274135!2d-76.25319297180098!3d-10.66310252756309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910813065449478d%3A0xa9661b3d3c4387c8!2sH%26S%20OCCUPATIONAL%20-%20PASCO!5e0!3m2!1ses!2spe!4v1626378653146!5m2!1ses!2spe" width="800" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
             ],

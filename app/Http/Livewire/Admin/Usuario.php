@@ -117,6 +117,9 @@ class Usuario extends Component
 
         $user = User::create([
             'name' => $this->name,
+            'lastname' => $this->lastname,
+            'username' => $this->username,
+            'phone' => $this->phone,
             'email' => $this->email,
             'status' => $this->status,
             'profile' => $this->profile,

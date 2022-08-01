@@ -47,7 +47,7 @@
 
     <div class="col-xl-6 col-md-6 col-12 mb-1">
         <label for="profile">Perfil</label>
-        <select wire:model="profile" class="form-control">
+        <select wire:model.lazy="profile" class="form-control">
             <option value="Elegir">Seleccione un Perfil</option>
             @foreach($roles as $role)
                 <option value="{{ $role->name }}">{{ $role->name }}</option>
@@ -83,7 +83,7 @@
 
     <div class="col-xl-6 col-md-6 col-12 mb-1">
         <label for="profile">Local</label>
-        <select wire:model="place" class="form-control">
+        <select wire:model.lazy="place" class="form-control">
             <option value="Elegir">Seleccione un Perfil</option>
             <option value="HUANCAYO">HUANCAYO</option>
             <option value="LIMA">LIMA</option>
@@ -99,7 +99,7 @@
 
     <div class="col-xl-6 col-md-6 col-12 mb-1">
         <label for="profile">Estado</label>
-        <select wire:model="status" class="form-control">
+        <select wire:model.lazy="status" class="form-control">
             <option value="Elegir">Seleccione un Perfil</option>
             <option value="active">ACTIVO</option>
             <option value="blocked">INACTIVO</option>
