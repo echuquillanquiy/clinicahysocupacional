@@ -35,10 +35,10 @@
                                     </ul>
                                 </div>
                                 <h4>
-                                    <a href="#">{{ $job->title }}</a>
+                                    <a href="{{ route('trabajos.index') }}">{{ $job->title }}</a>
                                 </h4>
 
-                                {!! Str::limit($job->description, 40) !!}
+                                {{ Str::limit($job->description, 40) }}
 
                             </div>
                         </div>
