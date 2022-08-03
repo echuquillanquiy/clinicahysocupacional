@@ -37,9 +37,9 @@
                                 <h4>
                                     <a href="#">{{ $job->title }}</a>
                                 </h4>
-                                {{--<p>
-                                    {!! Str::limit($job->description, 40) !!}
-                                </p>--}}
+
+                                {!! Str::limit($job->description, 40) !!}
+
                             </div>
                         </div>
                     </div>
