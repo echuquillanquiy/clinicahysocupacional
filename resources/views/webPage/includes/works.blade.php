@@ -12,7 +12,7 @@
             </div>
         </div>
 
-        <div class="row">
+        {{--<div class="row">
             <div class="blog-items">
                 <!-- Single Item -->
                 @foreach($jobs as $job)
@@ -20,7 +20,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="{{ route('trabajos.index') }}">
-{{--                                    <img src="{{ Storage::url( $job->image->url ) }}" alt="Thumb">--}}
+--}}{{--                                    <img src="{{ Storage::url( $job->image->url ) }}" alt="Thumb">--}}{{--
                                     <div class="post-type">
                                         <i class="fas fa-briefcase"></i>
                                     </div>
@@ -46,7 +46,7 @@
             @endforeach
             <!-- End Single Item -->
             </div>
-        </div>
+        </div>--}}
     </div>
 
 </div>
