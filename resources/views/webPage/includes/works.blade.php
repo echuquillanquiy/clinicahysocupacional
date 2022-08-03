@@ -1,4 +1,4 @@
-{{--<div id="works" class="blog-area default-padding bg-info">
+<div id="works" class="blog-area default-padding bg-info">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -20,7 +20,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="{{ route('trabajos.index') }}">
-                                    <img src="{{ Storage::url( $job->image->url ) }}" alt="Thumb">
+{{--                                    <img src="{{ Storage::url( $job->image->url ) }}" alt="Thumb">--}}
                                     <div class="post-type">
                                         <i class="fas fa-briefcase"></i>
                                     </div>
@@ -49,4 +49,4 @@
         </div>
     </div>
 
-</div>--}}
+</div>
