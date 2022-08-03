@@ -29,9 +29,9 @@
                             <div class="info">
                                 <div class="meta">
                                     <ul>
-                                        <li><a href="{{ route('trabajos.index') }}">{{ $job->area->name }}</a></li>
-                                        <li>{{ $job->start }} - {{ $job->place->name }} - {{ $job->schedule->name }}</li>
-{{--                                        <li><span class="text-primary"><i class="fas fa-users"></i>  Postulantes: </span> {{ $job->applicants_count }}</li>--}}
+                                        {{--<li><a href="{{ route('trabajos.index') }}">{{ $job->area->name }}</a></li>
+                                        <li>{{ $job->start }} - {{ $job->place->name }} - {{ $job->schedule->name }}</li>--}}
+                                        <li><span class="text-primary"><i class="fas fa-users"></i>  Postulantes: </span> {{ $job->applicants_count }}</li>
                                     </ul>
                                 </div>
                                 <h4>
