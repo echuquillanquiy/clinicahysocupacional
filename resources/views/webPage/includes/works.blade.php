@@ -38,7 +38,7 @@
                                     <a href="{{ route('trabajos.index') }}">{{ $job->title }}</a>
                                 </h4>
 
-                                {{ Str::limit($job->description, 40) }}
+                                {!! $job->description !!}
 
                             </div>
                         </div>
