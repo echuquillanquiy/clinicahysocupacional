@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\Web\HomeController;
 use App\Http\Controllers\Web\JobController;
 use App\Http\Controllers\Web\PlaceController;
@@ -38,3 +40,10 @@ Route::get('cotizaciones', [QoutationController::class, 'index'])->name('cotizac
 Route::get('cotizaciones/solicitudes', QuotationRequests::class)->middleware('auth')->name('solicitudes');
 
 Route::get('cotizaciones/{quotation}/generar', [QoutationController::class, 'create'])->name('generar.Cotizacion')->middleware('auth');
+
+
+Route::get('profiles', [UserController::class, 'curriculum'])->middleware('auth')->name('profiles.curriculum');
+Route::post('profiles/saves', [UserController::class, 'savecurriculum'])->middleware('auth')->name('saves.curriculum');
+Route::get('profiles/{profile}/editcv', [UserController::class, 'editcv'])->middleware('auth')->name('editcv.curriculum');
+Route::put('profiles/{profile}', [UserController::class, 'updatecv'])->middleware('auth')->name('updatecv.curriculum');
+Route::get('profiles/{profile}/download', [UserController::class, 'download'])->middleware('auth')->name('download.cv');

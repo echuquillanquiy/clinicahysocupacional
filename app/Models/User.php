@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
-use Symfony\Component\HttpKernel\Profiler\Profile;
+use App\Models\Profile;
 use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
@@ -67,6 +67,11 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function getCompletedAttribute()
+    {
+        return $this->users->contains(auth()->user()->id);
+    }
 
     //Relacion uno a muchos
     public function jobs_publicated(){
