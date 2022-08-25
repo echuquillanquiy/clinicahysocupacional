@@ -1,6 +1,6 @@
 <x-app-layout>
     <div class="container py-4">
-        <div class="card">
+        {{--<div class="card">
             @isset($user->profile_applicant->user_id)
                 <div class="card-header text-center p-4">
                     <h1 class="text-gray-500 text-4xl font-bold">DATOS PERSONALES</h1>
@@ -112,7 +112,9 @@
                     </div>
                 </form>
             @endisset
-        </div>
+        </div>--}}
+
+        {{ $user }}
     </div>
     <div class="container">
         <div class="card py-2 text-center text-red-600 font-black">
