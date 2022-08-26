@@ -114,7 +114,7 @@
             @endisset
         </div>--}}
 
-        {{ $user->profile_applicant }}
+        {{ $user }}
     </div>
     <div class="container">
         <div class="card py-2 text-center text-red-600 font-black">
