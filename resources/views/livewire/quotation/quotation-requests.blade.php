@@ -48,10 +48,11 @@
                 <tr>
 
                     <td class="px-6 py-4 whitespace-nowrap">
-                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-800">
-                            {{ $quotation->created_at }}
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full text-blue-800">
+                            {{ $quotation->created_at->format('Y-m-d') }}
                         </span>
                     </td>
+
                     <td class="px-6 py-4 whitespace-nowrap">
                         <div class="flex items-center">
                             <div class="ml-4">
