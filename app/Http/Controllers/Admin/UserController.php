@@ -19,7 +19,7 @@ class UserController extends Controller
     {
         $user = auth()->user();
 
-        dd($user->profile_applicant());
+        dd($user->profile_applicant);
         return view('profiles.curriculum', compact('user'));
     }
 
