@@ -18,6 +18,8 @@ class UserController extends Controller
     public function curriculum()
     {
         $user = auth()->user();
+
+        dd($user->profile_applicant());
         return view('profiles.curriculum', compact('user'));
     }
 
